@@ -2,8 +2,7 @@ const express = require("express");
 const logger = require("morgan");
 const mongoose = require("mongoose");
 
-const PORT = 3000;
-
+const PORT = process.env.PORT;
 const app = express();
 
 var uristring = 'mongodb://heroku_fjddtbcv:iqk8vm5vej667fep555ahrmep7@ds141228.mlab.com:41228/heroku_fjddtbcv';
