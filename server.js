@@ -6,7 +6,7 @@ const PORT = 3000;
 
 const app = express();
 
-var uristring = 'mongodb://heroku_q2lcnk95:thisispassword1@ds141218.mlab.com:41218/heroku_q2lcnk95';
+var uristring = 'mongodb://heroku_q2lcnk95:mh9lpbdq9olhqr7iqpjfs4ph16@ds141218.mlab.com:41218/heroku_q2lcnk95';
 
 app.use(logger("dev"));
 
