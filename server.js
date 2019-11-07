@@ -6,10 +6,7 @@ const PORT = 3000;
 
 const app = express();
 
-var uristring =
-    process.env.MONGOLAB_URI ||
-    process.env.MONGOHQ_URL ||
-    'mongodb://heroku_q2lcnk95:thisispassword1@ds141218.mlab.com:41218/heroku_q2lcnk95';
+var uristring = 'mongodb://heroku_q2lcnk95:thisispassword1@ds141218.mlab.com:41218/heroku_q2lcnk95';
 
 app.use(logger("dev"));
 
