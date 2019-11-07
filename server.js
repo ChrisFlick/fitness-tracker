@@ -6,6 +6,11 @@ const PORT = 3000;
 
 const app = express();
 
+var uristring =
+    process.env.MONGOLAB_URI ||
+    process.env.MONGOHQ_URL ||
+    'mongodb://localhost/workout';
+
 app.use(logger("dev"));
 
 app.use(express.urlencoded({ extended: true }));
@@ -13,7 +18,7 @@ app.use(express.json());
 
 app.use(express.static("public"));
 
-mongoose.connect("mongodb:/user:password1@ds141218.mlab.com:41218/heroku_q2lcnk95", {
+mongoose.connect(uristring, {
   useNewUrlParser: true,
   useFindAndModify: false
 });
