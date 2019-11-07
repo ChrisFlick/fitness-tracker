@@ -9,7 +9,7 @@ const app = express();
 var uristring =
     process.env.MONGOLAB_URI ||
     process.env.MONGOHQ_URL ||
-    'mongodb://localhost/workout';
+    'mongodb://heroku_q2lcnk95:password1@ds141218.mlab.com:41218/heroku_q2lcnk95';
 
 app.use(logger("dev"));
 
